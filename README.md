@@ -15,9 +15,9 @@ O projeto foi finalizado com sucesso, possuindo um modelo mobile-first e respons
 
 <br>
 
-<div align="center">
+<div align="left">
   <img src="https://github.com/Delgado-tech/multiply-me-game/assets/60985347/55903c13-ef97-40ef-927e-a59cbf94d594" width="300px">
-  <img src="https://github.com/Delgado-tech/multiply-me-game/assets/60985347/8e1222d4-3667-4d88-afd2-da26f2fd5837" width="300px">
+  <img src="https://github.com/Delgado-tech/multiply-me-game/assets/60985347/8e1222d4-3667-4d88-afd2-da26f2fd5837" width="300px"> <br>
   <img src="https://github.com/Delgado-tech/multiply-me-game/assets/60985347/3baf81bc-6cee-41be-b7cd-237e863b4788" width="300px">
   <img src="https://github.com/Delgado-tech/multiply-me-game/assets/60985347/612f9230-53e0-4d5b-a04d-83af3107dcb7" width="300px">
 </div>
