@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../styles/main.css" />
+  <link rel="stylesheet" href="../styles/game.css" />
+  <link rel="stylesheet" href="../styles/game-win.css" />
+  <link rel="stylesheet" href="../styles/game-lose.css" />
+  <link rel="stylesheet" href="../styles/responsive.css" />
+  <title>Multiply Me</title>
+</head>
+
+<body>
+  <header>
+    <nav id="exit">
+      <div class="exit-line"></div>
+      <div class="exit-line"></div>
+    </nav>
+    <div id="title-container">
+      <h1 id="title">Multiply Me</h1>
+      <h2 id="sub-title">if you can</h2>
+    </div>
+  </header>
+  <main>
+    <section id="game-container">
+      <div id="stats-container">
+        <div id="lives">
+          <img class="heart" src="../assets/heart.svg" data-heart-breaked="false"/>
+          <img class="heart" src="../assets/heart.svg" data-heart-breaked="false"/>
+          <img class="heart" src="../assets/heart.svg" data-heart-breaked="false"/>
+          <div id="heart-empty">
+            <img class="heart" src="../assets/heart-empty.svg"/>
+            <img class="heart" src="../assets/heart-empty.svg"/>
+            <img class="heart" src="../assets/heart-empty.svg"/>
+          </div>
+        </div>
+        <div id="level">
+          <div id="level-percent"></div>
+        </div>
+      </div>
+      <div id="question">
+        <div id="clock">
+          <p>45</p>
+        </div>
+        <p id="question-value">???</p>
+      </div>
+      <div id="options">
+        <button class="btn btn-option" data-selected-btn="false">40</button>
+        <button class="btn btn-option" data-selected-btn="false">200</button>
+        <button class="btn btn-option" data-selected-btn="false">400</button>
+      </div>
+      <div id="confirm">
+        <button class="btn btn-confirm" disabled>Confirmar</button>
+      </div>
+    </section>
+  </main>
+
+
+  <section id="lose-screen">
+    <div id="lose-screen-body">
+      <div id="lose-message">
+        <p></p>
+      </div>
+      <div id="lose-exit">
+        <button class="btn lose-exit-btn">Nah... Deixa para a próxima!</button>
+      </div>
+      <div id="repeat">
+        <button class="btn btn-blue">Repetir</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="win-screen">
+    <div id="win-screen-body">
+      <div id="win-message">
+        <p>Level completado!</p>
+      </div>
+      <div id="win-medal">
+        <p>Fácil</p>
+        <div class="medal-image">
+          <img src="../assets/clock-easy.svg" data-medal-level="1"/>
+        </div>
+      </div>
+      <div id="win-exit">
+        <button class="btn btn-blue">Continuar</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="../scripts/game.js"></script>
+</body>
+
+</html>

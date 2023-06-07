@@ -1,0 +1,177 @@
+/*============= EXIT =============*/
+
+#exit {
+    cursor: pointer;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+
+.exit-line {
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    border-radius: 50px;
+    background-color: var(--color-light-gray);
+}
+
+.exit-line:nth-child(1) {
+    transform: rotate(45deg);
+}
+
+.exit-line:nth-child(2) {
+    transform: rotate(-45deg);
+}
+
+/*============= MAIN =============*/
+
+#game-container {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 100%;
+    row-gap: 30px;
+}
+
+/*=== STATS ===*/
+
+#stats-container {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    column-gap: 20px;
+    align-items: center;
+}
+
+#lives {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+#lives .heart {
+    width: 25px;
+}
+
+#lives .heart[data-heart-breaked="true"] {
+    transform: scale(0%);
+    opacity: 0%;
+    animation: heartBreak 0.5s ease-out 0s normal;
+}
+
+#lives #heart-empty {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: -1;
+}
+
+#level {
+    background-color: var(--color-gray);
+    width: 90%;
+    height: 15px;
+    border-radius: 50px;
+}
+
+#level #level-percent {
+    background-color: var(--color-green);
+    width: 0%;
+    height: 100%;
+    border-radius: 100px;
+    transition: 0.2s ease-in-out;
+}
+
+/*=== QUESTION ===*/
+
+#question {
+    background-color: var(--color-dark-blue);
+    border-radius: 15px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+#clock {
+    background-color: var(--color-blue);
+    background-image: conic-gradient(var(--color-dark-blue) 0%, var(--color-dark-blue) 0%, transparent 0%, transparent 100%);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    border-radius: 50%;
+    font-size: 1rem;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+#clock p {
+    background-color: var(--color-dark-blue);
+    color: var(--color-dark-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+/*=== OPTIONS ===*/
+
+#options {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.btn-option {
+    background-color: transparent;
+    border: 2px solid var(--color-gray);
+    border-radius: 15px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 5px 0;
+}
+
+.btn-option[data-selected-btn="true"]{
+    border: 2px solid var(--color-blue);
+    background-color: var(--color-blue-transparent);
+}
+
+#confirm {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-dark-gray);
+    height: 120px;
+}
+
+/*============= KEYFRAMES =============*/
+
+@keyframes heartBreak {
+    0% {
+        transform: scale(100%);
+    }
+    25% {
+        transform: scale(120%);
+    }
+    50% {
+        transform: scale(120%); 
+        opacity: 100%;  
+    }
+    100% {
+        opacity: 0%;  
+        transform: scale(0%);
+    }
+}

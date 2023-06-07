@@ -1,0 +1,127 @@
+/*font-family: 'Poppins', sans-serif; font-weight: 400; 600; 700*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+:root {
+    /*color-pallete*/
+    --color-darken-gray: #3a3939;
+    --color-dark-gray: #333333;
+    --color-gray: #50504F;
+    --color-light-gray: #D9D9D9;
+    --color-green: #33CC33;
+    --color-dark-blue: #006EB8;
+    --color-blue: #0099FF;
+    --color-blue-transparent: #0099ff0a;
+    --color-red: #FF6868;
+    --color-golden: #fbce4a;
+    --gradient-golden: linear-gradient(90deg, #fbce4a 0%, #fceaaf 50%, #fbce4a 100%);
+    font-size: 16px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    vertical-align: baseline;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    user-select: none;
+}
+
+body {
+    background-color: #333;
+    min-height: 745px;
+    margin: 0 8%;
+}
+
+h1, h2 {
+    font-weight: 700;
+}
+
+/*============= HEADER =============*/
+
+#title-container {
+    position: relative;
+    text-align: center;
+    margin: 30px 0;
+}
+
+#title {
+    text-shadow: 5px 2px 20px rgba(0, 0, 0, 0.3);
+    font-size: 2rem;
+}
+
+#sub-title {
+    background-color: var(--color-green);
+    color: var(--color-dark-gray);
+    font-size: 1.2rem;
+    left: 32px;
+    margin-left: 50%;
+    padding: 2px 15px;
+    position: absolute;
+    top: 40px;
+    transform: rotate(3deg);
+    z-index: -1;
+    transition: 0.2s ease-in-out;
+}
+
+.btn {
+    background-color: var(--color-gray);
+    border-radius: 15px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 5px 15px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(103%);
+    filter: brightness(120%);
+    transition: 0.2s ease-in-out;
+}
+
+.btn:disabled {
+    transform: scale(90%);
+    background-color: var(--color-gray);
+    cursor: not-allowed;
+}
+
+.btn-blue {
+    background-color: var(--color-blue);
+    color: var(--color-dark-gray);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.7rem;
+    width: 85%;
+}
+
+.btn-confirm {
+    background-color: var(--color-green);
+    color: var(--color-dark-gray);
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 85%;
+    transition: 0.2s ease-out;
+}
+
+.medal-background {
+    background-color: var(--color-darken-gray);
+    border-radius: 15px;
+    padding: 7px;
+    box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.15);
+}
+
+.medal-image img[data-medal-level="locked"] {
+    cursor: not-allowed;
+    opacity: 0%;
+}
+
+.medal-image img[data-medal-level="0"] {
+    filter: saturate(0%);
+    opacity: 20%;
+}
+
+.medal-image img[data-medal-level="1"] {
+    filter: saturate(30%);
+}

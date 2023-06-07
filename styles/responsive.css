@@ -1,0 +1,26 @@
+@media screen and (min-width: 508px) {
+    body {
+        max-width: 450px;
+        margin: 0 auto;
+    }
+
+    #win-screen-body {
+        max-width: 450px;
+        margin: 0 auto;
+    }
+
+    #lose-screen-body {
+        max-width: 450px;
+        margin: 0 auto;
+    }
+
+    .btn-blue {
+        max-width: 450px;
+        margin: 0 auto;  
+    }
+
+    .btn-confirm {
+        max-width: 450px;
+        margin: 0 auto;     
+    }
+}
