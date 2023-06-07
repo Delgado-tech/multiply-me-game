@@ -56,6 +56,6 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: var(--color-dark-gray);
+    background-color: rgba(22, 22, 22, 0.1);
     height: 120px;
 }

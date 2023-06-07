@@ -1,3 +1,31 @@
+@media screen and (max-width: 376px) {
+    .level-selector-images {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    body {
+        margin: 0 3%;
+    }
+
+    #win-screen-body {
+        margin: 0 3%;
+    }
+
+    #lose-screen-body {
+        margin: 0 3%;
+    }
+
+    .btn-blue {
+        margin: 0 3%;
+    }
+
+    .btn-confirm {
+        margin: 0 3%;  
+    }
+}
+
 @media screen and (min-width: 508px) {
     body {
         max-width: 450px;
