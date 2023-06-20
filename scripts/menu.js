@@ -2,7 +2,7 @@ const medalImages = document.querySelectorAll(".medal-image");
 const difficultTexts = document.querySelectorAll(".level-selector-text");
 const subTitle = document.querySelector("#sub-title");
 
-const gameUrl = "../pages/game.html";
+const gameUrl = "./pages/game.html";
 
 var medalsLevel = [];
 var goldenLevels = 0;
