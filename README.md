@@ -11,7 +11,7 @@
 # 
 
 ### 🎯 Resolução:
-O projeto foi finalizado com sucesso, possuindo um modelo mobile-first e responsividade para desktop, existem 9 níveis, cada um com uma dificuldade e valocidade diferente, ao finalizar um level o próximo é liberado, ao finalizar um nível você ganha uma medalha de ferro, se finalizar a fase sem perder nenhuma vida, ganha uma medalha de ouro, caso todos os níveis tenham medalha de ouro o menu muda sua cor, veja algumas imagens do projeto:
+O projeto foi finalizado com sucesso, possuindo um modelo mobile-first e responsividade para desktop, existem 9 níveis, cada um com uma dificuldade e velocidade diferente, ao finalizar um level o próximo é liberado, ao finalizar um nível você ganha uma medalha de ferro, se finalizar a fase sem perder nenhuma vida, ganha uma medalha de ouro, caso todos os níveis tenham medalha de ouro o menu muda sua cor, veja algumas imagens do projeto:
 
 <br>
 
